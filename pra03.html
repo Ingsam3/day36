@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>문제03</title>
+		<script type="text/javascript">
+	
+			function test0(){
+				//큰 수
+				let num1= prompt("첫번 째 수 입력");
+				let num2= prompt("두번 째 수 입력");
+				
+				if(num1>num2){
+					max=num1;
+				}else{
+					max=num2;
+				}
+				return document.write(`큰 수 : ${max} <br>`);
+			}
+			
+			
+			function test01(){
+				//홀짝
+				let num1= prompt(" 홀짝 판별할 수 입력");
+			
+				if(num1 % 2 === 0){
+					document.write(`${num1} : 짝수<br>`);
+				}else{
+					document.write(`${num1} : 홀수<br>`);
+				}
+			}
+			
+			function test02(){
+				//3의 배수
+				let num1= prompt(" 3의 배수 판별할 수 입력");
+				
+				if(num1 % 3 === 0){
+					document.write(`${num1} : 3의 배수<br>`);
+				}else{
+					document.write(`${num1} : 3의 배수가 아님<br>`);
+				}
+				
+			}
+			
+			function test03(){
+				//소수 판별
+				let num1= prompt("소수 판별할 수 입력");
+				
+				for(let i=2; i<num1; i++){
+					if(num1 % i == 0){
+						return document.write("소수 아님");
+					}else{
+						return document.write("소수");
+					}
+					
+				}
+				
+			}
+			function test04(){
+				//절대값 구하기(음수 -> 양수)
+				let num1= prompt(" 절대값 판별할 수 입력");
+				let result = 0;
+				if(num1 < 0){
+					 num1 = num1*-1
+					 result = document.write(`${num1}의 절대값은 ${num1}`);
+						
+				}else{
+					 result = document.write(num1);
+				}
+				return result;
+			}
+		
+			
+			test0();
+			test01();
+			test02();
+			test03();
+			test04();
+			
+			
+			/*
+			강사님 답안
+			function big01( values) {
+				if(values[0] > values[1] ) 
+					return values[0];
+				return values[1];
+				}
+				function output01(values, result) {
+					document.write(`${values[0]} 와 ${values[1]} 큰 수 ${result}`)
+				}
+				function input01(){
+				const n1 = prompt("수 입력")
+				const n2 = prompt("수 입력")
+				return [n1, n2];
+				}
+				const inputValue = input01();
+				const result = big01( inputValue );
+				output01(inputValue, result);
+
+
+				//=============================
+
+
+				<script>
+				function oddEven02( value ) {
+					return ( value % 2 == 0 )?"짝수":"홀수";
+				}
+				function output02(value, re) {
+					document.write(`${value}는 ${re} 입니다`)
+				}
+				function input02(){
+				const n1 = prompt("수 입력")
+				return n1;
+				}
+				const value = input02();
+				const re = oddEven02( value );
+				output02(value, re);
+			
+
+				//======================
+
+				
+				function multipleCheck03( value ) {
+				return ( value % 3 == 0 )?"3의 배수":"배수 아님";
+				}
+				function output03(value, re) {
+				document.write(`${value}는 ${re} 입니다`)
+				}
+				function input03(){
+				const n1 = prompt("수 입력")
+				return n1;
+				}
+				const value03 = input03();
+				const re03 = multipleCheck03( value03 );
+				output03(value03, re03);
+				
+
+
+				//=====================
+
+				function primeCheck04( value ) {
+				let cnt = 0;
+				for(let i = 1; i <= value ; i++){
+				if(value % i === 0) cnt++;
+				}
+				if(cnt == 2) return "소수";
+				return "아니다";
+				}
+				function output04(value, re) {
+				document.write(`${value}는 ${re} 입니다`)
+				}
+				function input04(){
+				const n1 = prompt("수 입력")
+				return n1;
+				}
+				const value04 = input04();
+				const re04 = primeCheck04( value04 );
+				output04(value04, re04);
+
+
+				//======================
+
+			
+				function absoluteCheck05( value ) {
+				if( value < 0 )
+				return -value;
+				return value;
+				}
+				function output05(value, re) {
+				document.write(`${value}의 절대값은 ${re} 입니다`)
+				}
+				function input05(){
+				const n1 = prompt("수 입력")
+				return n1;
+				}
+				const value05 = input05();
+				const re05 = absoluteCheck05( value05 );
+				output05(value05, re05);
+				
+
+			*/ 
+			
+		</script>
+	</head>
+	<body>
+	
+	</body>
+</html>

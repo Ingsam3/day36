@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>함수03</title>
+		<script type="text/javascript">
+		//메소드 오버로딩 (이름 같아도 매개변수 다르면 서로 다른 함수로 인식)
+		//java scrip는 오버로딩 없음. 그냥 맨 마지막에 생성된 같은 이름 함수 실행
+			/* function test01(x,y){
+				console.log("First fun start");
+			}
+		
+			function test01(x){
+				console.log("Second fun start");
+			}
+		test01(10,20);
+		test01(10);//두번째 함수 실행
+		test01();
+			
+		function test03(x,y,z){
+			document.write(`매개변수 : ${x}, ${y}, ${z} <br>`);
+			let sum ;
+			if(z === undifined){
+				sum =x+y;
+			}else{
+				sum = x+y+z;
+				
+			}return sum;
+		}	
+		
+		let r1 = test03(2,3);
+		let r2 = test03(4,5,6);
+		document.write(` 인자 1개 값 :  + r1 + <br>`);
+		document.write(` 인자 1개 값 :  + r2 + <br>`);*/
+			
+		function test04(){
+			console.log(arguments);
+			console.log(arguments.length);
+			let sum=0;
+			for(let i =0; i <argument.length; i++){
+			sum += argument[i];	
+				
+			}document.write("합 : " + sum);
+			
+		}
+		
+		test04(1,2);
+		test04(1,2,3,4,5);
+		
+		</script>
+	</head>
+	<body>
+	
+	</body>
+</html>

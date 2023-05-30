@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>함수05</title>
+		<script type="text/javascript">
+		//익명함수-화살표 함수
+		let fun= function(){
+			console.log("익명 함수");
+			
+		}
+		fun();
+		
+		
+		let fun1 = () =>{
+			console.log("화살표 함수");
+			return 100;
+		}
+		document.write(fun1());
+		
+		const fun01 =()=>{
+			10+20; //undefined 잘못 된 사용법
+		}
+		
+		const fun02 =()=>
+			10+20; //중괄호 없으면 리턴 값 보낸다는 뜻 03과 같은 문장
+		
+		const fun03 =()=>{
+			return 10+20;// 중괄호 있으면 무조건 return 사용해야함(연산시에 무조건 이 형식 사용)
+		}
+		const test04 = (n) => (n>10) ? 10:5;
+		
+		document.write("<hr>");
+		document.write(fun01() + "<br>"); 
+		document.write(fun02() + "<br>");
+		document.write(fun03() + "<br>");
+		document.write(test04() + "<br>");
+		
+		</script>
+	</head>
+	<body>
+	
+	</body>
+</html>

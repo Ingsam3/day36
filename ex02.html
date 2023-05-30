@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>함수01</title>
+		<script type="text/javascript">
+			console.log("프로그램 시작");
+			function test(){
+				console.log("test function start");
+			}
+		    console.log("함수 지나옴");
+			test();
+			console.log("함수 종료됨");
+			
+			function localval(){ //지역변수
+				let num =2000;
+				if(true){
+					let if_num=10;
+					num +=2000;
+					console.log("if : "+num);
+				}
+				console.log(`localval : ${num}`);
+				console.log(`localval : ${if_num}`); //error : 지역변수라 if문 안에사만 사용가능 
+			}
+			//localval();
+			let num01 ="전역변수입니다."
+			function localval_01(){
+				let num=1000;
+				console.log("01" +num01);
+			}
+			function localval_02(){
+				console.log("02" +num01);
+			}
+			localval_01();
+			localval_02();//error : num 지역변수 사용X
+			
+			
+		</script>
+	</head>
+	<body>
+	
+	</body>
+</html>

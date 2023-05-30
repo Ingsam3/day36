@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>함수04</title>
+		<script type="text/javascript">
+		
+		/*
+		익명함수와 일반함수 차이 : 일반함수는 메모리에 계속 보관 함(저장공간 계속 차지)
+		익명함수는 메모리에 업로드 X 사용할 때만 잠깐 올렸다 사용하고 실행하면 메모리에서 삭제
+		*/
+		
+		
+		//익명함수
+		let sumF = function(x, y){
+			alert("익명함수 실행");
+			return x+y;
+		}
+		
+		document.write(sumF(10,20)+ "<br>");
+		
+		//즉시실행함수 :초기화 용도
+		let result = (function test(){
+			return "즉시 실행 함수는 초기화 목적으로 사용한다."; //돌려줄 값이 있으면 변수 사용
+		})();
+		document.write(result);
+
+		let name = "홍길동";
+			(function test1(n){
+			alter(n +"님 반갑습니다.");
+		})(name);
+	
+		
+		
+		
+		</script>
+	</head>
+	<body>
+	
+	</body>
+</html>

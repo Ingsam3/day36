@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>함수02</title>
+		<script type="text/javascript">
+		/*
+			function test01(){
+				let num =100;
+				num =200;
+				console.log("num : " +num);
+			}
+			test01();
+			console.log("num : " +num);//error : num지역변수
+			
+			function test02(){
+				var num2 = 100;
+				var num2 = "aaa"; //변수 재설정
+				console.log("n2 : "+num2);
+				
+			}
+			test02();
+			console.log("out 02" +num2);*/
+			
+			const n1 = 10;
+			const n2 = 20;
+			
+			const sum = sumFunction(n1,n2);
+			
+			function sumFunction(num1, num2){
+				const s = num1 +num2;
+				return s;
+				
+			}
+			document.write(`${n1}+${n2} = ${sum}`);
+			
+			function test03(){
+				const num = 95;
+				const txt = "HI";
+				const arr = [num, txt];
+				return arr //배열로 묶어서 동시에 출력
+			}
+			const result = test03();
+			document.write("<hr>" + result);
+			document.write("<hr>" + result[0]);
+			document.write("<hr>" + result[1]);
+			
+		</script>
+	</head>
+	<body>
+	
+	</body>
+</html>
