@@ -21,6 +21,72 @@
 		}
 		document.write(sumF());
 		
+		function test0(){
+			//큰 수
+			let num1= prompt("첫번 째 수 입력");
+			let num2= prompt("두번 째 수 입력");
+			
+			if(num1>num2){
+				max=num1;
+			}else{
+				max=num2;
+			}
+			return document.write(`큰 수 : ${max} <br>`);
+		}
+		
+		
+		function test01(){
+			//홀짝
+			let num1= prompt(" 홀짝 판별할 수 입력");
+		
+			if(num1 % 2 === 0){
+				document.write(`${num1} : 짝수<br>`);
+			}else{
+				document.write(`${num1} : 홀수<br>`);
+			}
+		}
+		
+		function test02(){
+			//3의 배수
+			let num1= prompt(" 3의 배수 판별할 수 입력");
+			
+			if(num1 % 3 === 0){
+				document.write(`${num1} : 3의 배수<br>`);
+			}else{
+				document.write(`${num1} : 3의 배수가 아님<br>`);
+			}
+			
+		}
+		
+		function test03(){
+			//소수 판별
+			let num1= prompt("소수 판별할 수 입력");
+			
+			for(let i=2; i<num1; i++){
+				if(num1 % i == 0){
+					return document.write("소수 아님");
+				}else{
+					return document.write("소수");
+				}
+				
+			}
+			
+		}
+		function test04(){
+			//절대값 구하기(음수 -> 양수)
+			let num1= prompt(" 절대값 판별할 수 입력");
+			let result = 0;
+			if(num1 < 0){
+				 num1 = num1*-1
+				 result = document.write(`${num1}의 절대값은 ${num1}`);
+					
+			}else{
+				 result = document.write(num1);
+			}
+			return result;
+		}
+		
+		
 		</script>
 	</head>
 	<body>
